@@ -1,0 +1,27 @@
+--User Get Saving Content Information
+
+{"messageType":"REQUEST","sourceId":"test","messageId":"2272","transactionId":"v2e1nkrdnsfqtmunaaed-1608608754481","uri":"get:/api/v1/kbfina/finance/saving/content","responseDestination":{"topic":"test","uri":"request_response"},"data":{"id":"1","headers":{"acceptLanguage":"VI"}}}
+
+--User Filter Saving information
+
+{"messageType":"REQUEST","sourceId":"test","messageId":"2272","transactionId":"v2e1nkrdnsfqtmunaaed-1608608754481","uri":"get:/api/v1/kbfina/finance/saving","responseDestination":{"topic":"test","uri":"request_response"},"data":{"bankId":"1","type":null,"channel":null,"amount":null,"period":null,"operator":null}}
+
+--Institution Post Saving Information
+
+{"messageType":"REQUEST","sourceId":"test","messageId":"2272","transactionId":"v2e1nkrdnsfqtmunaaed-1608608754481","uri":"post:/api/v1/kbfina/finance/saving","responseDestination":{"topic":"test","uri":"request_response"},"data":{"bankId":"3","type":"Tiet Kiem Ngan Han","channel":"Tai Quay","amount":60000000,"period":"8","rate":5.6,"contact":"098954311"}}
+
+--Institution Post Content Saving Information
+
+{"messageType":"REQUEST","sourceId":"test","messageId":"2272","transactionId":"v2e1nkrdnsfqtmunaaed-1608608754481","uri":"post:/api/v1/kbfina/finance/saving/content","responseDestination":{"topic":"test","uri":"request_response"},"data":{"categoryId":"1","rowId":"2","content":"Tiet Kiem 1","orderId":"1","headers":{"acceptLanguage":"VI"}}}
+
+--Institution Update Saving Information
+
+{"messageType":"REQUEST","sourceId":"test","messageId":"2272","transactionId":"v2e1nkrdnsfqtmunaaed-1608608754481","uri":"put:/api/v1/kbfina/finance/saving","responseDestination":{"topic":"test","uri":"request_response"},"data":{"id":"4","bankId":"3","type":"Tiet Kiem Ngan","channel":"Tai Quay","amount":60000000,"period":"8","rate":5.6,"contact":"098954311"}}
+
+--Institution Update Content Saving Information
+
+{"messageType":"REQUEST","sourceId":"test","messageId":"2272","transactionId":"v2e1nkrdnsfqtmunaaed-1608608754481","uri":"put:/api/v1/kbfina/finance/saving/content","responseDestination":{"topic":"test","uri":"request_response"},"data":{"id":"4","categoryId":"2","rowId":"4","content":"Tiet Kiem 2","orderId":"2","headers":{"acceptLanguage":"VI"}}}
+
+--Institution Delete Saving
+
+{"messageType":"REQUEST","sourceId":"test","messageId":"2272","transactionId":"v2e1nkrdnsfqtmunaaed-1608608754481","uri":"delete:/api/v1/kbfina/finance/saving","responseDestination":{"topic":"test","uri":"request_response"},"data":{"id":"5"}}
